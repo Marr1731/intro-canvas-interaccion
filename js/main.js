@@ -141,15 +141,15 @@ function updateMouseCoordinates(context) {
     context.fillStyle = "black";
     context.fillText(" X: " + mouseX, 25, 10); // Actualiza el texto con la coordenada X
     context.fillText(" Y: " + mouseY, 25, 25); // Actualiza el texto con la coordenada Y
-
-    if (isMouseClicked) {
+    
+    //if (isMouseClicked) {
         // Dibujar rectángulo desde la posición del clic hasta las coordenadas (1, 1)
         context.strokeStyle = "red";
         context.lineWidth = 2;
         context.strokeRect(clickX, clickY, 1 - clickX, 1 - clickY);
 
         isMouseClicked = false; // Reinicia la bandera de clic
-    }
+    //}
 }
 
 // Llama a la función para actualizar las coordenadas del mouse en cada frame
