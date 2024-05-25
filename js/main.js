@@ -8,7 +8,7 @@ const window_width = window.innerWidth;
 canvas.height = window_height;
 canvas.width = window_width;
 
-canvas.style.background = "#ff8";
+canvas.style.background = "#FFBAFB";
 
 // Variable para almacenar las coordenadas del mouse
 let mouseX = 0;
@@ -142,14 +142,7 @@ function updateMouseCoordinates(context) {
     context.fillText(" X: " + mouseX, 25, 10); // Actualiza el texto con la coordenada X
     context.fillText(" Y: " + mouseY, 25, 25); // Actualiza el texto con la coordenada Y
     
-    //if (isMouseClicked) {
-        // Dibujar rectángulo desde la posición del clic hasta las coordenadas (1, 1)
-        context.strokeStyle = "red";
-        context.lineWidth = 2;
-        context.strokeRect(clickX, clickY, 1 - clickX, 1 - clickY);
-
-        isMouseClicked = false; // Reinicia la bandera de clic
-    //}
+  
 }
 
 // Llama a la función para actualizar las coordenadas del mouse en cada frame
